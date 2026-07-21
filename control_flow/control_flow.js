@@ -44,3 +44,25 @@ switch(userType){
 }
 
 console.log("User Category:", userCategory);
+
+let isAuthenticated = true;
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not Authenticated";
+
+console.log("Authentication Status:", authenticationStatus);
+
+//Practice Task
+
+let organisationStatus = "Non-Subscriber";
+let dietaryServiceAccess;
+
+if (organisationStatus === "Employee"){
+    dietaryServiceAccess = "Dietary Services";
+} else if (organisationStatus === "Enrolled Member"){
+    dietaryServiceAccess = "Dietary Services plus 1-on-1 with dietician";
+} else if (organisationStatus === "Subscriber"){
+    dietaryServiceAccess = "Partial Dietary Services";
+} else {
+    dietaryServiceAccess = "Please subscribe to enjoy Dietary Services";
+}
+
+console.log("Dietary Services Access:", dietaryServiceAccess)
